@@ -47,9 +47,9 @@ Với ảnh trên sau khi người dùng giải nén xong và thực hiện ch�
 
 Từ 1 có thể khẳng định part 1 là TT1547.001
 
-Bây giờ mình sẽ thực hiện tìm ở trên list theo (link)[https://dmcxblue.gitbook.io/red-team-notes-2-0/red-team-techniques/privilege-escalation/untitled/registry-run-keys-startup-folder]
+Bây giờ mình sẽ thực hiện tìm ở trên list theo [link](https://dmcxblue.gitbook.io/red-team-notes-2-0/red-team-techniques/privilege-escalation/untitled/registry-run-keys-startup-folder)
 
-Và mình có đọc thêm ở trên (Microsoft)[https://learn.microsoft.com/en-us/mem/configmgr/develop/reference/core/clients/client-classes/sms_autostartsoftware-client-wmi-class]
+Và mình có đọc thêm ở trên [Microsoft](https://learn.microsoft.com/en-us/mem/configmgr/develop/reference/core/clients/client-classes/sms_autostartsoftware-client-wmi-class)
 
 ![image](https://github.com/hoanga2dtk68/KCSC-CTF/assets/110059218/5fdac139-89f9-4427-888c-e37b14d589c0)
 
@@ -105,7 +105,7 @@ Từ đây mình chỉ cần tính lại hashcode để xor ngược lại với
 
 Với file jpg có dấu hiệu kết thúc file là FF D9 mình chỉ cần lấy từ đó đến hết file và thực hiện xor để lấy lại private key
 
-Ban đầu do không biết cơ chế trong (blog)[https://andrewlock.net/why-is-string-gethashcode-different-each-time-i-run-my-program-in-net-core/] này nên mình stuck khá lâu ở phần gethashcode do bị thay đổi theo thời gian
+Ban đầu do không biết cơ chế trong [blog([https://andrewlock.net/why-is-string-gethashcode-different-each-time-i-run-my-program-in-net-core/) này nên mình stuck khá lâu ở phần gethashcode do bị thay đổi theo thời gian
 
 ![image](https://github.com/hoanga2dtk68/KCSC-CTF/assets/110059218/4917dd76-aebc-4f81-8f1e-148c26879f7e)
 
