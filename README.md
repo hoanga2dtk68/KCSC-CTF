@@ -21,6 +21,8 @@ Flag: KCSC{2023-09-18_08:32:22.547027}
 
 ![image](https://github.com/hoanga2dtk68/KCSC-CTF/assets/110059218/28b0b128-7572-41a7-843f-ca907666945c)
 
+Ban đầu có thể phân tích file History của Edge
+
 Khi mới vào có thể thấy rất rõ nguồn gốc cuộc tấn công với file được tải về 
 
 ![Screenshot 2024-05-14 015733](https://github.com/hoanga2dtk68/KCSC-CTF/assets/110059218/34d75a98-aaec-486b-bfb7-18d77565a604)
@@ -29,7 +31,7 @@ Nhưng tác giả đã xóa file zip đã được tải về tuy file zip vẫn
 
 ![image](https://github.com/hoanga2dtk68/KCSC-CTF/assets/110059218/fa76ac27-e7e0-4191-8046-06191ddb436c)
 
-Để phát hiện ra con loader ở trên máy được nằm ở đâu thì mình có 2 phương án
+Để phát hiện ra con loader ở trên máy được nằm ở đâu thì mình có 2 phương án:
 
 1. Grep theo extension encrypt trên máy ở đây là .KCSC(hơi unintended một chút) -> tìm được malware encrypt file-> tìm được loader -> check các chỗ autorun
 
