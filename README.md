@@ -31,7 +31,7 @@ Nhưng tác giả đã xóa file zip đã được tải về tuy file zip vẫn
 
 Để phát hiện ra con loader ở trên máy được nằm ở đâu thì mình có 2 phương án
 
-1. Grep theo extension encrypt trên máy ở đây là .KCSC(hơi unintended một chút) -> tìm được loader -> check các chỗ autorun
+1. Grep theo extension encrypt trên máy ở đây là .KCSC(hơi unintended một chút) -> tìm được malware encrypt file-> tìm được loader -> check các chỗ autorun
 
 2. Thực hiện ghép thời gian tải về của file zip và check prefetch để lấy có file thực thi chạy thời gian gần đó để tìm cách mà hacker tạo persistence
 
@@ -105,7 +105,7 @@ Từ đây mình chỉ cần tính lại hashcode để xor ngược lại với
 
 Với file jpg có dấu hiệu kết thúc file là FF D9 mình chỉ cần lấy từ đó đến hết file và thực hiện xor để lấy lại private key
 
-Ban đầu do không biết cơ chế trong [blog([https://andrewlock.net/why-is-string-gethashcode-different-each-time-i-run-my-program-in-net-core/) này nên mình stuck khá lâu ở phần gethashcode do bị thay đổi theo thời gian
+Ban đầu do không biết cơ chế trong [blog](https://andrewlock.net/why-is-string-gethashcode-different-each-time-i-run-my-program-in-net-core/) này nên mình stuck khá lâu ở phần gethashcode do bị thay đổi theo thời gian
 
 ![image](https://github.com/hoanga2dtk68/KCSC-CTF/assets/110059218/4917dd76-aebc-4f81-8f1e-148c26879f7e)
 
